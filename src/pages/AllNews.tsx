@@ -28,10 +28,6 @@ const AllNews: React.FC = () => {
   const ionInfiniteScrollRef = React.createRef<HTMLIonInfiniteScrollElement>()
   const { data, loading, error, hasMore, loadMore } = useAllNews()
 
-  useEffect(() => {
-    console.log(data)
-  }, [data])
-
   if (data.length === 0) return <IonLoading
     isOpen={loading}
     message={`Patientez s'il vous plaît...`}

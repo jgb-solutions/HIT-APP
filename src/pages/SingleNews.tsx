@@ -44,10 +44,6 @@ interface Props extends RouteComponentProps<{
 const SingleNews: React.FC<Props> = ({ match }) => {
   const { data, loading, error } = useSingleNews(match.params.newsHash)
 
-  useEffect(() => {
-    console.log(data)
-  }, [data])
-
   if (loading) return <IonLoading
     isOpen={loading}
     message={`Patientez s'il vous plaît...`}
