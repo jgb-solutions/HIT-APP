@@ -1,7 +1,7 @@
 import React from 'react'
 import { IonApp, IonRouterOutlet, IonSplitPane } from '@ionic/react'
 import { IonReactRouter } from '@ionic/react-router'
-import { Route } from 'react-router-dom'
+import { Route, Redirect } from 'react-router-dom'
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css'
@@ -38,6 +38,7 @@ const App: React.FC = () => {
             <Route path="/about" render={() => <About />} exact={true} />
             <Route path="/404" render={() => <FourOrFour />} exact={true} />
             <Route path="/n/:newsHash" render={props => <SingleNews {...props} />} />
+            <Redirect to="/404" />
           </IonRouterOutlet>
         </IonSplitPane>
       </IonReactRouter>

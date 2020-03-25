@@ -21,7 +21,7 @@ export default function SEO({ title, url, description, type, image, imageWidth, 
       dont son nom Haiti info Toutan,
       constituée de professionnels de l'information.
       HIT se veut être un outil util pour ses lecteurs pour qui,
-      l'information  est d'une importance  capitale dans leur quotidien
+      l'information  est d'une importance  capitale dans leur quotidien.
   `
   const imageContent = image || `${DOMAIN}/assets/images/haiti Info Toutan.jpeg`
 
