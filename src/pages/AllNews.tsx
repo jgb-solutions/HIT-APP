@@ -52,7 +52,7 @@ const AllNews: React.FC = () => {
             {data.map((news: NewsInterface) => (
               <IonCol key={news.hash} size="12" sizeSm="4" sizeXl="3">
                 <IonCard routerLink={`/n/${news.hash}`}>
-                  {!!news.image_url && (<img src={news.image_url} alt={news.title} />)}
+                  <img src={news?.image_url || 'https://infotoutan.com/assets/images/haiti%20Info%20Toutan.jpeg'} alt={news?.title} />
                   <IonCardHeader>
                     <IonCardSubtitle>{news.public_date}</IonCardSubtitle>
                     <IonCardTitle>{news.title}</IonCardTitle>
