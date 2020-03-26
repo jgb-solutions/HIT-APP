@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 import {
   IonButtons,
@@ -54,7 +54,7 @@ const SingleNews: React.FC<Props> = ({ match }) => {
   const ShareButtons = () => {
     const url = window.location.href
     const title = `${data?.title} - Haïti Info Toutan (HIT)`
-    const hashtags = `HIT partage news`
+    const hashtags = `HIT HITNews news`
 
     return (
       <IonRow>
