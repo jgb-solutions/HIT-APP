@@ -105,7 +105,7 @@ const SingleNews: React.FC<Props> = ({ match }) => {
           <IonRow>
             <IonCol key={data?.hash} size="12" sizeSm="6">
               <IonCard>
-                {!!data?.image_url && (<img src={data?.image_url} alt={data?.title} />)}
+                <img src={data?.image_url || 'https://infotoutan.com/assets/images/haiti%20Info%20Toutan.jpeg'} alt={data?.title} />
                 <IonCardHeader>
                   <IonCardSubtitle>{data?.public_date}</IonCardSubtitle>
                 </IonCardHeader>
