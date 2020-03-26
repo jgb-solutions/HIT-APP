@@ -23,7 +23,7 @@ export default function SEO({ title, url, description, type, image, imageWidth, 
       HIT se veut être un outil util pour ses lecteurs pour qui,
       l'information  est d'une importance  capitale dans leur quotidien.
   `
-  const imageContent = image || `${DOMAIN}/assets/images/haiti Info Toutan.jpeg`
+  const imageContent = image || `https://files.infotoutan.com/images/03kpJg2M2zsaY3GmdRUn50OKQfua2p84ETrg2L3V.jpeg`
 
   return (
     <>

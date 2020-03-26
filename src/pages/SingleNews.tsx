@@ -105,7 +105,7 @@ const SingleNews: React.FC<Props> = ({ match }) => {
           <IonRow>
             <IonCol key={data?.hash} size="12" sizeSm="6">
               <IonCard>
-                <img src={data?.image_url || 'https://infotoutan.com/assets/images/haiti%20Info%20Toutan.jpeg'} alt={data?.title} />
+                <img src={data?.image_url || 'https://files.infotoutan.com/images/03kpJg2M2zsaY3GmdRUn50OKQfua2p84ETrg2L3V.jpeg'} alt={data?.title} />
                 <IonCardHeader>
                   <IonCardSubtitle>{data?.public_date}</IonCardSubtitle>
                 </IonCardHeader>
@@ -135,7 +135,7 @@ const SingleNews: React.FC<Props> = ({ match }) => {
                 {data?.randoms.map((news: NewsInterface) => (
                   <IonCol key={news.hash} size="12" sizeSm="4" sizeXl="3">
                     <IonCard routerLink={`/n/${news.hash}`}>
-                      {!!news.image_url && (<img src={news.image_url} alt={news.title} />)}
+                      <img src={news?.image_url || 'https://files.infotoutan.com/images/03kpJg2M2zsaY3GmdRUn50OKQfua2p84ETrg2L3V.jpeg'} alt={news?.title} />
                       <IonCardHeader>
                         <IonCardSubtitle>{news.public_date}</IonCardSubtitle>
                         <IonCardTitle>{news.title}</IonCardTitle>
