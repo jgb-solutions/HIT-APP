@@ -36,6 +36,7 @@ import NewsInterface from '../interfaces/NewsInterface'
 import SEO from '../components/SEO'
 import { TWITTER_HANDLE } from '../utils/constants'
 import colors from '../utils/colors'
+import "./SingleNews.css"
 
 interface Props extends RouteComponentProps<{
   newsHash: string
@@ -110,6 +111,16 @@ const SingleNews: React.FC<Props> = ({ match }) => {
                   <IonCardSubtitle>{data?.public_date}</IonCardSubtitle>
                 </IonCardHeader>
                 <IonCardContent>
+                  {data?.video_id && (
+                    <div className="video-container">
+                      <iframe
+                        width="853"
+                        height="480"
+                        src={`https://www.youtube.com/embed/${data.video_id}`}
+                        frameBorder="0"
+                        allowFullScreen title={data.title} />
+                    </div>
+                  )}
                   <div dangerouslySetInnerHTML={{ __html: `${data?.body}` }} />
                 </IonCardContent>
                 {!!data?.ads && (

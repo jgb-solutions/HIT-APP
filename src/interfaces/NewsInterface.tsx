@@ -5,4 +5,5 @@ export default interface NewsInterface {
   hash: string
   image_url?: string
   title: string
+  video_id?: string
 }
