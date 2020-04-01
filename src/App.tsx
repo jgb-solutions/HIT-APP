@@ -3,7 +3,7 @@ import { IonApp, IonRouterOutlet, IonSplitPane, isPlatform } from '@ionic/react'
 import { IonReactRouter } from '@ionic/react-router'
 import { Route, Redirect } from 'react-router-dom'
 // import { AdMobFree, AdMobFreeBannerConfig } from '@ionic-native/admob-free'
-import { AdMob } from "@ionic-native/admob-plus"
+// import { AdMob } from "@ionic-native/admob-plus"
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css'
@@ -41,11 +41,11 @@ const App: React.FC = () => {
   // AdMobFree.banner.config(bannerConfig)
   // AdMobFree.banner.prepare()
   //   .catch(e => console.log(e))
-  if (isPlatform('android')) {
-    AdMob.banner.show({
-      id: 'ca-app-pub-3793163111580068~5741556623',
-    })
-  }
+  // if (isPlatform('android')) {
+  //   AdMob.banner.show({
+  //     id: 'ca-app-pub-3793163111580068~5741556623',
+  //   })
+  // }
 
   return (
     <IonApp>
