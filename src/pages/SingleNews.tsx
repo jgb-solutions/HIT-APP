@@ -53,7 +53,7 @@ const SingleNews: React.FC<Props> = ({ match }) => {
   if (error) return <Redirect to="/404" />
 
   const ShareButtons = () => {
-    const url = window.location.href
+    const url = `https://infotoutan.com/n/${match.params.newsHash}`
     const title = `${data?.title} - Haïti Info Toutan (HIT)`
     const hashtags = `HIT HITNews news`
 

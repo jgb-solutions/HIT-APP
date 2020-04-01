@@ -6,4 +6,4 @@ export const TWITTER_HANDLE = `tikwenpam`
 // // Google Adsense
 // export const GOOGLE_ADS_CLIENT = `ca-pub-3793163111580068`
 
-export const DOMAIN = process.env.REACT_APP_DOMAIN || `https://infotoutan.com`
+export const DOMAIN = `https://infotoutan.com`

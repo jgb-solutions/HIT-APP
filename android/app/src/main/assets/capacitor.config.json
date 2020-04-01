@@ -1,0 +1,8 @@
+{
+	"appId": "jgb.solutions.hit",
+	"appName": "HIT (Haiti Info Toutan)",
+	"bundledWebRuntime": false,
+	"npmClient": "yarn",
+	"webDir": "build",
+	"cordova": {}
+}
