@@ -1061,13 +1061,6 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@ionic-native/admob-plus@^5.23.0":
-  version "5.23.0"
-  resolved "https://registry.yarnpkg.com/@ionic-native/admob-plus/-/admob-plus-5.23.0.tgz#94a9434f6b803ebe9427871070593dad8d52f096"
-  integrity sha512-EuaDQI1kDTQSudRilJQViduWvwWFkybrJFAUhpMNTBTZZrI2ubNufiImRPZhyBdHVbdp+XdSNTAfuUx2lM1aWw==
-  dependencies:
-    "@types/cordova" latest
-
 "@ionic-native/core@^5.23.0":
   version "5.23.0"
   resolved "https://registry.yarnpkg.com/@ionic-native/core/-/core-5.23.0.tgz#69bb05a5491c94c1f8656246a237d4caa2e41d41"
@@ -2365,10 +2358,10 @@ balanced-match@^1.0.0:
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
   integrity sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
 
-base64-js@^1.0.2, base64-js@^1.2.3:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.3.1.tgz#58ece8cb75dd07e71ed08c736abc5fac4dbf8df1"
-  integrity sha512-mLQ4i2QO1ytvGWFWmcngKO//JXAQueZvwEKtjgQFM4jIK0kU+ytMfplL8j+n5mspOfjHwoAg+9yhb7BwAHm36g==
+base64-js@^1.0.2, base64-js@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
+  integrity sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
 
 base@^0.11.1:
   version "0.11.2"
@@ -3172,25 +3165,6 @@ copy-descriptor@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
   integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
-
-cordova-admob-plus@^0.35.0:
-  version "0.35.0"
-  resolved "https://registry.yarnpkg.com/cordova-admob-plus/-/cordova-admob-plus-0.35.0.tgz#055b0055fc1bf5524e80dec1cd1854f4c37af586"
-  integrity sha512-Njsk20m5/6pOrVQ4+WZfRwe+Dx5imiTbJVN6GlhsM5hABtLDXAw120dBSBm1+eOE4zHPcWnu0mfR/sJydfoPrw==
-
-cordova-plugin-androidx-adapter@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/cordova-plugin-androidx-adapter/-/cordova-plugin-androidx-adapter-1.1.0.tgz#5696f0c972242ded2ecbd73bd6dadfdb42d6e274"
-  integrity sha512-V09W27ViYnh54fR2eilswXt10DrQ1P23fo+3JdbrHqU5HkNfufWojK9dWPzDYQ6xKQkOkUJcEh6tLWxg5hQdgg==
-  dependencies:
-    performance-now "^2.1.0"
-    q "^1.4.1"
-    recursive-readdir "^2.2.2"
-
-cordova-promise-polyfill@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/cordova-promise-polyfill/-/cordova-promise-polyfill-0.0.2.tgz#6bb7a949c56a7c318e7f554e6338c8f863e505a8"
-  integrity sha1-a7epScVqfDGOf1VOYzjI+GPlBag=
 
 core-js-compat@^3.6.2:
   version "3.6.4"
@@ -7765,13 +7739,12 @@ pkg-up@3.1.0:
     find-up "^3.0.0"
 
 plist@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/plist/-/plist-3.0.1.tgz#a9b931d17c304e8912ef0ba3bdd6182baf2e1f8c"
-  integrity sha512-GpgvHHocGRyQm74b6FWEZZVRroHKE1I0/BTjAmySaohK+cUn+hZpbqXkc3KWgW3gQYkqcQej35FohcT0FRlkRQ==
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/plist/-/plist-3.0.4.tgz#a62df837e3aed2bb3b735899d510c4f186019cbe"
+  integrity sha512-ksrr8y9+nXOxQB2osVNqrgvX/XQPOXaU4BQMKjYq8PvaY1U18mo+fKgBSwzK+luSyinOuPae956lSVcBwxlAMg==
   dependencies:
-    base64-js "^1.2.3"
+    base64-js "^1.5.1"
     xmlbuilder "^9.0.7"
-    xmldom "0.1.x"
 
 pn@^1.1.0:
   version "1.1.0"
@@ -8622,7 +8595,7 @@ punycode@^2.1.0, punycode@^2.1.1:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
-q@^1.1.2, q@^1.4.1:
+q@^1.1.2:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
@@ -8966,7 +8939,7 @@ realpath-native@^1.1.0:
   dependencies:
     util.promisify "^1.0.0"
 
-recursive-readdir@2.2.2, recursive-readdir@^2.2.2:
+recursive-readdir@2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/recursive-readdir/-/recursive-readdir-2.2.2.tgz#9946fb3274e1628de6e36b2f6714953b4845094f"
   integrity sha512-nRCcW9Sj7NuZwa2XvH9co8NPeXUBhZP7CRKJtU+cS6PW9FpCIFoI5ib0NT1ZrbNuPoRy0ylyCaUL8Gih4LSyFg==
@@ -11037,11 +11010,6 @@ xmlchars@^2.1.1:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/xmlchars/-/xmlchars-2.2.0.tgz#060fe1bcb7f9c76fe2a17db86a9bc3ab894210cb"
   integrity sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw==
-
-xmldom@0.1.x:
-  version "0.1.31"
-  resolved "https://registry.yarnpkg.com/xmldom/-/xmldom-0.1.31.tgz#b76c9a1bd9f0a9737e5a72dc37231cf38375e2ff"
-  integrity sha512-yS2uJflVQs6n+CyjHoaBmVSqIDevTAWrzMmjG1Gc7h1qQ7uVozNhEPJAwZXWyGQ/Gafo3fCwrcaokezLPupVyQ==
 
 xtend@^4.0.0, xtend@~4.0.1:
   version "4.0.2"
