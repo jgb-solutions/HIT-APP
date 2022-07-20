@@ -1061,13 +1061,6 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@ionic-native/admob-plus@^5.23.0":
-  version "5.23.0"
-  resolved "https://registry.yarnpkg.com/@ionic-native/admob-plus/-/admob-plus-5.23.0.tgz#94a9434f6b803ebe9427871070593dad8d52f096"
-  integrity sha512-EuaDQI1kDTQSudRilJQViduWvwWFkybrJFAUhpMNTBTZZrI2ubNufiImRPZhyBdHVbdp+XdSNTAfuUx2lM1aWw==
-  dependencies:
-    "@types/cordova" latest
-
 "@ionic-native/core@^5.23.0":
   version "5.23.0"
   resolved "https://registry.yarnpkg.com/@ionic-native/core/-/core-5.23.0.tgz#69bb05a5491c94c1f8656246a237d4caa2e41d41"
@@ -2593,9 +2586,9 @@ bser@2.1.1:
     node-int64 "^0.4.0"
 
 buffer-from@^1.0.0:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.1.tgz#32713bc028f75c02fdb710d7c7bcec1f2c6070ef"
-  integrity sha512-MQcXEUbCKtEo7bhqEs6560Hyd4XaovZlO/k9V3hjVUF/zwW7KBVdSK4gIt/bzwS9MbR5qob+F5jusZsb0YQK2A==
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.2.tgz#2b146a6fd72e80b4f55d255f35ed59a3a9a41bd5"
+  integrity sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==
 
 buffer-indexof@^1.0.0:
   version "1.1.1"
@@ -3172,25 +3165,6 @@ copy-descriptor@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
   integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
-
-cordova-admob-plus@^0.35.0:
-  version "0.35.0"
-  resolved "https://registry.yarnpkg.com/cordova-admob-plus/-/cordova-admob-plus-0.35.0.tgz#055b0055fc1bf5524e80dec1cd1854f4c37af586"
-  integrity sha512-Njsk20m5/6pOrVQ4+WZfRwe+Dx5imiTbJVN6GlhsM5hABtLDXAw120dBSBm1+eOE4zHPcWnu0mfR/sJydfoPrw==
-
-cordova-plugin-androidx-adapter@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/cordova-plugin-androidx-adapter/-/cordova-plugin-androidx-adapter-1.1.0.tgz#5696f0c972242ded2ecbd73bd6dadfdb42d6e274"
-  integrity sha512-V09W27ViYnh54fR2eilswXt10DrQ1P23fo+3JdbrHqU5HkNfufWojK9dWPzDYQ6xKQkOkUJcEh6tLWxg5hQdgg==
-  dependencies:
-    performance-now "^2.1.0"
-    q "^1.4.1"
-    recursive-readdir "^2.2.2"
-
-cordova-promise-polyfill@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/cordova-promise-polyfill/-/cordova-promise-polyfill-0.0.2.tgz#6bb7a949c56a7c318e7f554e6338c8f863e505a8"
-  integrity sha1-a7epScVqfDGOf1VOYzjI+GPlBag=
 
 core-js-compat@^3.6.2:
   version "3.6.4"
@@ -8622,7 +8596,7 @@ punycode@^2.1.0, punycode@^2.1.1:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
-q@^1.1.2, q@^1.4.1:
+q@^1.1.2:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
@@ -8966,7 +8940,7 @@ realpath-native@^1.1.0:
   dependencies:
     util.promisify "^1.0.0"
 
-recursive-readdir@2.2.2, recursive-readdir@^2.2.2:
+recursive-readdir@2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/recursive-readdir/-/recursive-readdir-2.2.2.tgz#9946fb3274e1628de6e36b2f6714953b4845094f"
   integrity sha512-nRCcW9Sj7NuZwa2XvH9co8NPeXUBhZP7CRKJtU+cS6PW9FpCIFoI5ib0NT1ZrbNuPoRy0ylyCaUL8Gih4LSyFg==
@@ -9691,9 +9665,9 @@ source-map-resolve@^0.5.0, source-map-resolve@^0.5.2:
     urix "^0.1.0"
 
 source-map-support@^0.5.6, source-map-support@~0.5.12:
-  version "0.5.16"
-  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.16.tgz#0ae069e7fe3ba7538c64c98515e35339eac5a042"
-  integrity sha512-efyLRJDr68D9hBBNIPWFjhpFzURh+KJykQwvMyW5UiZzYwoF6l4YMMDIJJEyFWxWCqfyxLzz6tSfUFR+kXXsVQ==
+  version "0.5.21"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.21.tgz#04fe7c7f9e1ed2d662233c28cb2b35b9f63f6e4f"
+  integrity sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==
   dependencies:
     buffer-from "^1.0.0"
     source-map "^0.6.0"
@@ -10135,9 +10109,9 @@ terser-webpack-plugin@^1.4.3:
     worker-farm "^1.7.0"
 
 terser@^4.1.2, terser@^4.4.3, terser@^4.6.3:
-  version "4.6.6"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-4.6.6.tgz#da2382e6cafbdf86205e82fb9a115bd664d54863"
-  integrity sha512-4lYPyeNmstjIIESr/ysHg2vUPRGf2tzF9z2yYwnowXVuVzLEamPN1Gfrz7f8I9uEPuHcbFlW4PLIAsJoxXyJ1g==
+  version "4.8.1"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-4.8.1.tgz#a00e5634562de2239fd404c649051bf6fc21144f"
+  integrity sha512-4GnLC0x667eJG0ewJTa6z/yXrbLGv80D9Ru6HIpCQmO+Q4PfEtBFi0ObSckqwL6VyQv/7ENJieXHo2ANmdQwgw==
   dependencies:
     commander "^2.20.0"
     source-map "~0.6.1"
